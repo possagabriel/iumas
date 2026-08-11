@@ -497,7 +497,8 @@
   position: relative;
   width: min(100%, 58rem);
   margin-inline: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
+  max-height: min(80svh, 760px);
   border-radius: var(--radius-l);
   overflow: hidden;
   border: 1px solid var(--color-border-strong);

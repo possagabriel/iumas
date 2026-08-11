@@ -63,8 +63,8 @@ Exemplo:
 
 - **Para adicionar um trabalho novo:** copie um item do array `projects` e troque os campos.
   O card, o filtro e o modal são gerados automaticamente.
-- **Antes/Depois:** troque `assets/images/before-after/before.svg` e `after.svg` pelas fotos
-  reais (mesma proporção, ~1000×640 recomendado).
+- **Antes/Depois:** as fotos do comparador ficam em `assets/images/before-after/antes.jpg` e `depois.jpg`
+  (mesmo enquadramento e tamanho, recomendado ~1200px). Atualize os caminhos em `js/data.js` → `beforeAfter`.
 - **Hero/Sobre:** troque `hero-main.svg` e `about.svg`.
 - **Instagram:** os itens ficam em `instagramItems` (recomendado quadrado, 600×600+).
 

@@ -187,11 +187,11 @@ window.LUMAS = (function () {
   const beforeAfter = {
     caption: 'Resultado após a limpeza',
     before: {
-      src: 'assets/images/before-after/before.svg',
+      src: 'assets/images/before-after/antes.jpg',
       alt: 'Módulos fotovoltaicos antes da limpeza'
     },
     after: {
-      src: 'assets/images/before-after/after.svg',
+      src: 'assets/images/before-after/depois.jpg',
       alt: 'Módulos fotovoltaicos depois da limpeza'
     }
   };
