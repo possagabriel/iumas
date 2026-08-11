@@ -1,0 +1,58 @@
+/* ============================================================
+   Lumas Energia Solar — responsive.css
+   Mobile-first. Ajustes para 640, 768, 1024, 1280 e telas largas.
+   ============================================================ */
+
+/* --- Tablets (>= 640px) --- */
+@media (min-width: 40rem) {
+  .hero__content {
+    padding-inline: var(--space-7);
+  }
+
+  .header__actions .btn--whatsapp {
+    display: inline-flex;
+  }
+
+  .instagram__grid {
+    gap: var(--space-4);
+  }
+}
+
+/* --- Estrutura desktop (>= 1024px) --- */
+@media (min-width: 64rem) {
+  .hero__content {
+    padding-left: calc((100% - var(--container-max)) / 2 + var(--space-7));
+    padding-right: var(--space-7);
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+/* --- Telas muito largas (>= 1600px): limitar a hero --- */
+@media (min-width: 100rem) {
+  .hero__content {
+    align-self: center;
+  }
+}
+
+/* --- Ajustes finos de largura mínima --- */
+@media (max-width: 20rem) {
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .cta__actions .btn {
+    width: 100%;
+  }
+
+  .modal {
+    padding: var(--space-2);
+  }
+}
+
+/* Garante que nada estoure horizontalmente em telas estreitas */
+@media (max-width: 30rem) {
+  .container {
+    padding-inline: var(--space-4);
+  }
+}

@@ -1,0 +1,50 @@
+/* ============================================================
+   Lumas Energia Solar — animations.css
+   Fade-in ao entrar na viewport + prefers-reduced-motion
+   ============================================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Itens em sequência — controle via JS com --reveal-delay */
+.reveal-group > .reveal:nth-child(1) { --reveal-delay: 0ms; }
+.reveal-group > .reveal:nth-child(2) { --reveal-delay: 70ms; }
+.reveal-group > .reveal:nth-child(3) { --reveal-delay: 140ms; }
+.reveal-group > .reveal:nth-child(4) { --reveal-delay: 210ms; }
+.reveal-group > .reveal:nth-child(5) { --reveal-delay: 280ms; }
+.reveal-group > .reveal:nth-child(6) { --reveal-delay: 350ms; }
+.reveal-group > .reveal:nth-child(7) { --reveal-delay: 420ms; }
+.reveal-group > .reveal:nth-child(8) { --reveal-delay: 490ms; }
+.reveal-group > .reveal:nth-child(9) { --reveal-delay: 560ms; }
+
+/* Acessibilidade: reduz movimento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

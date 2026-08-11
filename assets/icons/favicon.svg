@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lumas Energia Solar">
+  <rect width="64" height="64" rx="14" fill="#161615"/>
+  <circle cx="30" cy="24" r="8" fill="#ECE2CB"/>
+  <path d="M30 8v-4M30 44v4M12 24H8M52 24h4M17 12l-3-3M43 12l3-4M17 36l-3 4M43 36l3 4" stroke="#BEA580" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M18 42l8-10h14l8 10z" fill="#BEA580"/>
+  <path d="M18 42l-6-7M18 42l6-7M32 35l0 7M44 35l8-7M44 35l-6-7" stroke="#BEA580" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+</svg>
