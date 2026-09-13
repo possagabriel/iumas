@@ -26,7 +26,8 @@ lumas-energia-solar/
 │   ├── style.css         → Design system (tokens, botões, forms, header)
 │   ├── sections.css      → Estilo de cada seção (hero, portfólio, modal…)
 │   ├── animations.css    → Fade-in (IntersectionObserver) + reduced-motion
-│   └── responsive.css    → Ajustes mobile-first (640/768/1024+)
+│   ├── responsive.css    → Ajustes mobile-first (640/768/1024+)
+│   └── visual.css        → Identidade visual atual e ajustes responsivos finais
 ├── js/
 │   ├── data.js           → ⚙️ TODOS OS DADOS EDITÁVEIS DO SITE
 │   ├── whatsapp.js       → Monta os links do WhatsApp (mensagem + número)
@@ -42,7 +43,9 @@ lumas-energia-solar/
 
 ## Como trocar as imagens (placeholder → foto real)
 
-Hoje o site usa **placeholders SVG** em `assets/images/`. Para usar as fotos reais:
+O portfólio, a seção Sobre e o Instagram usam **placeholders SVG** em `assets/images/`.
+A abertura usa uma foto ilustrativa do setor (`solar-hero.webp`), com crédito em
+`assets/images/CREDITOS.md`. Ela não representa uma obra da Lumas. Para usar as fotos reais:
 
 1. Coloque as fotos em `assets/images/portfolio/` (WebP recomendado, ~1200px de largura).
 2. Atualize o caminho no projeto correspondente em `js/data.js` → `projects[].images`.
@@ -65,7 +68,8 @@ Exemplo:
   O card, o filtro e o modal são gerados automaticamente.
 - **Antes/Depois:** as fotos do comparador ficam em `assets/images/before-after/antes.jpg` e `depois.jpg`
   (mesmo enquadramento e tamanho, recomendado ~1200px). Atualize os caminhos em `js/data.js` → `beforeAfter`.
-- **Hero/Sobre:** troque `hero-main.svg` e `about.svg`.
+- **Hero:** substitua `solar-hero.webp` ou atualize o `src` da imagem em `index.html`.
+- **Sobre:** troque `about.svg` ou atualize seu `src` em `index.html`.
 - **Instagram:** os itens ficam em `instagramItems` (recomendado quadrado, 600×600+).
 
 > Não é preciso alterar HTML, CSS ou JS para gerenciar conteúdo: **tudo está em `data.js`**.
@@ -105,8 +109,23 @@ No `<head>` do `index.html` e nos arquivos raiz:
 
 ## Identidade visual
 
-Paleta extraída da referência da marca: **fundo near-black `#161615`**, texto cream `#F6F3EE`,
-detalhes dourados `#BEA580` / `#ECE2CB`. Fonte: **Inter**.
+Estilo **clean, corporativo e moderno**, com fundos claros, títulos amplos e chamadas em
+amarelo solar. A apresentação final está centralizada em `css/visual.css`, carregado
+depois dos estilos estruturais. As seções, textos, categorias e dados comerciais originais
+foram preservados; `js/data.js` permanece inalterado.
+
+| Uso | Cor |
+| --- | --- |
+| Títulos e texto principal | Azul profundo `#142F3B` |
+| Chamadas de orçamento e detalhes solares | Amarelo `#F5BD3D` |
+| WhatsApp, links e ícones | Verde `#176249` |
+| Abertura e seção de resultados | Verde profundo `#103A31` |
+| Superfícies | Branco `#FFFFFF` e cinza esverdeado `#F2F6F5` |
+
+**Manrope** nos títulos e **Inter** nos textos e controles, com fontes de sistema como
+alternativa. As animações respeitam a preferência de movimento reduzido. Os placeholders
+foram ajustados à paleta, preservando seus textos, e as duas fotos do comparador não foram
+alteradas. Os nove cases permanecem em cards filtráveis; não há depoimentos cadastrados.
 
 ## Deploy (gratuito)
 

@@ -155,6 +155,7 @@
     lastFocused = document.activeElement;
 
     currentModalImages = project.images;
+    galleryIndex = 0;
 
     $('#modal-cat').textContent = D.categoryLabels[project.category];
     $('#modal-title').textContent = project.title;
@@ -320,10 +321,8 @@
       menu.setAttribute('data-open', String(open));
       menu.setAttribute('aria-hidden', String(!open));
       menu.inert = !open;
-      if (open) {
-        const first = $('.mobile-menu__link, .mobile-menu__wa', menu);
-        if (first) first.focus();
-      } else {
+      // Ao abrir, Tab leva do botão ao primeiro link, sem saltos de foco.
+      if (!open) {
         btn.focus();
       }
     };
@@ -344,10 +343,7 @@
         e.preventDefault();
         setOpen(false);
       } else if (e.key === 'Tab') {
-        const focusables = $$(
-          ".mobile-menu a[href], .mobile-menu button:not([disabled])",
-          menu.parentElement
-        );
+        const focusables = [btn].concat($$("a[href], button:not([disabled])", menu));
         if (!focusables.length) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
@@ -375,6 +371,7 @@
 
   /* ---------- Scrollspy ---------- */
   function initScrollSpy() {
+    if (!('IntersectionObserver' in window)) return;
     const sections = $$('main section[id]');
     const observer = new IntersectionObserver(
       function (entries) {
@@ -396,7 +393,7 @@
   /* ---------- Revelação suave ---------- */
   function initReveal() {
     const els = $$('.reveal');
-    if (!('IntersectionObserver' in window)) {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       els.forEach(function (el) {
         el.classList.add('is-visible');
       });
@@ -414,6 +411,7 @@
       { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
     );
     els.forEach(function (el) {
+      el.classList.add('reveal--pending');
       io.observe(el);
     });
   }
@@ -573,6 +571,8 @@
   /* ---------- Init ---------- */
   document.addEventListener('DOMContentLoaded', function () {
     renderServices();
+    // Inclui os botões criados após a primeira configuração dos links.
+    if (D.wa) D.wa.linkify();
     renderPortfolio();
     initFilters();
     initModal();

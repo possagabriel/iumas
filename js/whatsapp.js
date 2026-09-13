@@ -38,6 +38,7 @@
   document.addEventListener('DOMContentLoaded', linkify);
 
   window.LUMAS.wa = {
+    linkify,
     buildUrl,
     buildMessage
   };
