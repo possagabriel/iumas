@@ -1,5 +1,5 @@
 /* ============================================================
-   Lumas Energia Solar — whatsapp.js
+   Iumas Energia Solar — whatsapp.js
    Utilitários para links do WhatsApp (números e mensagem).
    ============================================================ */
 

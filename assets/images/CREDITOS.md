@@ -6,7 +6,7 @@ Foto de **American Public Power Association**, publicada no Unsplash:
 [Solar panel under blue sky](https://unsplash.com/photos/solar-panel-under-blue-sky-XGAZzyLzn18).
 
 O registro mostra uma instalação da Lincoln Electric Systems, em Lincoln, Nebraska.
-É usado como imagem ilustrativa do setor solar, não como obra executada pela Lumas.
+É usado como imagem ilustrativa do setor solar, não como obra executada pela Iumas.
 
 [Licença Unsplash](https://unsplash.com/license), consultada em 13/09/2026.
 A imagem foi disponibilizada em WebP pelo serviço de imagens do Unsplash. O tratamento

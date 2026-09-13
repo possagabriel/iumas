@@ -4,4 +4,4 @@ Allow: /
 # Bloqueia consultas de impressão desnecessárias (opcional)
 # Disallow: /assets/
 
-Sitemap: https://lumas-energia-solar.example.com/sitemap.xml
+Sitemap: https://iumas-energia-solar.example.com/sitemap.xml

@@ -14,7 +14,7 @@
   <g opacity="0.35">
     <path d="M0 1100 L144.0 682.0 L270.0 858.0 L450.0 550.0 L594.0 770.0 L738.0 616.0000000000001 L900 792.0 V1100 Z" fill="none" stroke="#397260" stroke-width="1.5"/>
   </g>
-  <text x="450.0" y="54" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="29.0" letter-spacing="4" fill="#e3ede7" fill-opacity="0.5" font-weight="600">LUMAS · ENERGIA SOLAR</text>
+  <text x="450.0" y="54" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="29.0" letter-spacing="4" fill="#e3ede7" fill-opacity="0.5" font-weight="600">IUMAS · ENERGIA SOLAR</text>
   <rect x="1.5" y="1.5" width="897" height="1097" rx="10" fill="none" stroke="#397260"/>
   
   <rect x="360.0" y="438.0" width="180" height="34" rx="17" fill="none" stroke="#f5bd3d" stroke-opacity="0.4"/>

@@ -1,5 +1,5 @@
 /* ============================================================
-   Lumas Energia Solar — main.js
+   Iumas Energia Solar — main.js
    Menu, scrollspy, render de serviços/portfólio, filtros, modal,
    lightbox, antes/depois, revelação, formulário.
    ============================================================ */
@@ -548,7 +548,7 @@
           );
         } else {
           setStatus(
-            'Se o WhatsApp não abriu, <a href="' + url + '" target="_blank" rel="noopener">clique aqui</a> para falar com a Lumas.',
+            'Se o WhatsApp não abriu, <a href="' + url + '" target="_blank" rel="noopener">clique aqui</a> para falar com a Iumas.',
             'error'
           );
         }

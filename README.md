@@ -1,6 +1,6 @@
-# Lumas Energia Solar — Portfólio
+# Iumas Energia Solar — Portfólio
 
-Landing page / portfólio profissional para a **Lumas Energia Solar** — limpeza, manutenção e
+Landing page / portfólio profissional para a **Iumas Energia Solar** — limpeza, manutenção e
 instalação de sistemas fotovoltaicos em Barbacena e região (MG).
 
 Site **100% estático** (HTML + CSS + JS vanilla, sem dependências). Funciona abrindo o
@@ -45,7 +45,7 @@ lumas-energia-solar/
 
 O portfólio, a seção Sobre e o Instagram usam **placeholders SVG** em `assets/images/`.
 A abertura usa uma foto ilustrativa do setor (`solar-hero.webp`), com crédito em
-`assets/images/CREDITOS.md`. Ela não representa uma obra da Lumas. Para usar as fotos reais:
+`assets/images/CREDITOS.md`. Ela não representa uma obra da Iumas. Para usar as fotos reais:
 
 1. Coloque as fotos em `assets/images/portfolio/` (WebP recomendado, ~1200px de largura).
 2. Atualize o caminho no projeto correspondente em `js/data.js` → `projects[].images`.
@@ -103,7 +103,7 @@ No `<head>` do `index.html` e nos arquivos raiz:
 - **Dados estruturados** Schema.org `LocalBusiness`
 - `robots.txt` e `sitemap.xml`
 
-> Antes de publicar, troque `https://lumas-energia-solar.example.com` pelo **domínio real** em:
+> Antes de publicar, troque `https://iumas-energia-solar.example.com` pelo **domínio real** em:
 > `index.html` (canonical, OG, JSON-LD) · `data.js` (`site.url`) · `robots.txt` · `sitemap.xml`.
 > A mesma URL também vale para `og:image` — use a foto da hero com caminho absoluto.
 

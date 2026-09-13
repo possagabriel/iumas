@@ -1,5 +1,5 @@
 /* ============================================================
-   Lumas Energia Solar — data.js
+   Iumas Energia Solar — data.js
    ⚙️ TODOS OS DADOS EDITÁVEIS DO SITE FICAM AQUI.
    Não precisa tocar em HTML/CSS/JS para atualizar conteúdo.
 
@@ -13,8 +13,8 @@ window.LUMAS = (function () {
 
   /* ---------- Configurações gerais/navegação ---------- */
   const site = {
-    name: "Lumas Energia Solar",
-    shortName: "Lumas",
+    name: "Iumas Energia Solar",
+    shortName: "Iumas",
     subname: 'Energia Solar',
     tagline: 'Limpeza e manutenção para sua usina fotovoltaica.',
     area: 'Barbacena e região',
@@ -23,7 +23,7 @@ window.LUMAS = (function () {
     phoneDisplay: '(32) 98851-0149',
     phoneIntl: '5532988510149', // somente números, com DDI 55
     whatsappMessage:
-      'Olá! Vi o portfólio da Lumas Energia Solar e gostaria de solicitar um orçamento.',
+      'Olá! Vi o portfólio da Iumas Energia Solar e gostaria de solicitar um orçamento.',
 
     // Instagram
     instagram: '@manutencoes_fotovoltaicas_',
@@ -44,7 +44,7 @@ window.LUMAS = (function () {
     },
 
     // Domínio oficial (canonical/sitemap). Troque pelo domínio real.
-    url: 'https://lumas-energia-solar.example.com',
+    url: 'https://iumas-energia-solar.example.com',
 
     nav: [
       { label: 'Início', href: '#inicio' },
@@ -107,7 +107,7 @@ window.LUMAS = (function () {
       description:
         'Serviço de limpeza realizado nos módulos do sistema para remover acúmulo de sujeira e manter a geração em boas condições.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-1.svg']
+      images: ['assets/images/portfolio/portfolio-1.svg?v=iumas']
     },
     {
       id: 'higienizacao-usina-1',
@@ -116,7 +116,7 @@ window.LUMAS = (function () {
       description:
         'Higienização geral de usina fotovoltaica, incluindo módulos e área de instalação.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-2.svg']
+      images: ['assets/images/portfolio/portfolio-2.svg?v=iumas']
     },
     {
       id: 'limpeza-sistema-1',
@@ -125,7 +125,7 @@ window.LUMAS = (function () {
       description:
         'Limpeza de sistema fotovoltaico residencial com atenção aos detalhes e segurança.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-3.svg']
+      images: ['assets/images/portfolio/portfolio-3.svg?v=iumas']
     },
     {
       id: 'manutencao-preventiva-1',
@@ -134,7 +134,7 @@ window.LUMAS = (function () {
       description:
         'Verificação periódica dos componentes do sistema fotovoltaico para prevenir falhas.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-4.svg']
+      images: ['assets/images/portfolio/portfolio-4.svg?v=iumas']
     },
     {
       id: 'manutencao-inversor-1',
@@ -143,7 +143,7 @@ window.LUMAS = (function () {
       description:
         'Serviço de manutenção e verificação de inversores para o bom funcionamento do sistema.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-5.svg']
+      images: ['assets/images/portfolio/portfolio-5.svg?v=iumas']
     },
     {
       id: 'inspecao-estrutura-1',
@@ -152,7 +152,7 @@ window.LUMAS = (function () {
       description:
         'Inspeção da estrutura e fixações dos módulos para garantir firmeza e segurança da instalação.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-6.svg']
+      images: ['assets/images/portfolio/portfolio-6.svg?v=iumas']
     },
     {
       id: 'instalacao-sistema-1',
@@ -161,7 +161,7 @@ window.LUMAS = (function () {
       description:
         'Instalação de sistema fotovoltaico com estrutura bem fixada, cabeamento organizado e acabamento cuidadoso.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-7.svg']
+      images: ['assets/images/portfolio/portfolio-7.svg?v=iumas']
     },
     {
       id: 'instalacao-usina-1',
@@ -170,7 +170,7 @@ window.LUMAS = (function () {
       description:
         'Instalação de usina fotovoltaica seguindo as boas práticas para os módulos e demais componentes.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-8.svg']
+      images: ['assets/images/portfolio/portfolio-8.svg?v=iumas']
     },
     {
       id: 'instalacao-residencial-1',
@@ -179,7 +179,7 @@ window.LUMAS = (function () {
       description:
         'Instalação de sistema fotovoltaico residencial, do planejamento da posição dos módulos ao acabamento final.',
       location: null,
-      images: ['assets/images/portfolio/portfolio-9.svg']
+      images: ['assets/images/portfolio/portfolio-9.svg?v=iumas']
     }
   ];
 
@@ -198,10 +198,10 @@ window.LUMAS = (function () {
 
   /* ---------- Instagram ---------- */
   const instagramItems = [
-    { src: 'assets/images/instagram-1.svg', alt: 'Trabalho de limpeza fotovoltaica publicado no Instagram' },
-    { src: 'assets/images/instagram-2.svg', alt: 'Trabalho de manutenção fotovoltaica publicado no Instagram' },
-    { src: 'assets/images/instagram-3.svg', alt: 'Instalação fotovoltaica publicada no Instagram' },
-    { src: 'assets/images/instagram-4.svg', alt: 'Trabalho fotovoltaico publicado no Instagram' }
+    { src: 'assets/images/instagram-1.svg?v=iumas', alt: 'Trabalho de limpeza fotovoltaica publicado no Instagram' },
+    { src: 'assets/images/instagram-2.svg?v=iumas', alt: 'Trabalho de manutenção fotovoltaica publicado no Instagram' },
+    { src: 'assets/images/instagram-3.svg?v=iumas', alt: 'Instalação fotovoltaica publicada no Instagram' },
+    { src: 'assets/images/instagram-4.svg?v=iumas', alt: 'Trabalho fotovoltaico publicado no Instagram' }
   ];
 
   /* ---------- Formulário: opções de serviço ---------- */
